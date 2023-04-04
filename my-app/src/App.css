@@ -1,7 +1,7 @@
 *{
     padding: 0px;
     margin: 0px;
-    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Space Mono', monospace;
     background-color: hsl(185, 41%, 84%);
 }
 .tudo{
@@ -51,14 +51,25 @@
     background-color: white;
     width: 10vw;
 }
-.bill{
+.num_people{
     color:hsl(183, 100%, 15%);
-    font-size: 1.2vw;
+    font-size: 0.9vw;
     letter-spacing: 0.1vw;
     background-color: white;
     margin-bottom: 0.5vw;
+    margin-top: 3vw;
+    width: 15vw;
+    
 }
-.money{
+.bill{
+    color:hsl(183, 100%, 15%);
+    font-size: 0.9vw;
+    letter-spacing: 0.1vw;
+    background-color: white;
+    margin-bottom: 0.5vw;
+    margin-top: 3vw;
+}
+.count{
     background-color: hsl(189, 41%, 97%);
     width: 24vw;
     border: 0px;
@@ -66,12 +77,47 @@
     font-size: 1.6vw;
     text-align: right;
 }
-.money::selection{
-    margin-right: 2vw;
-}
-.money::placeholder{
+.count::placeholder{
     text-align: right;
     font-size: 1.6vw;
     margin-right: 1vw;
     margin-top: 3.5vw;
+}
+.tip{
+    color:hsl(183, 100%, 15%);
+    font-size: 0.9vw;
+    letter-spacing: 0.1vw;
+    background-color: white;
+    margin-bottom: 0.5vw;
+    margin-left: 2.5vw;
+    margin-top: 2.5vw;
+}
+.botoes{
+    background-color: white;
+    margin-left: 1.5vw;
+}
+.botoes_cima{
+    display: flex;  
+    background-color: white;  
+}
+.botoes_baixo{
+    display: flex;    
+    background-color: white;
+}
+.botao{
+    width: 7.1vw;
+    height: 2.9vw;
+    margin-left: 1vw;
+    margin-top: 1vw;
+    border-radius: 0.35vw;
+    background-color: hsl(183, 100%, 15%);;
+    border: 0px;
+    font-size: 1.5vw;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.botao6{
+    background-color: hsl(189, 41%, 97%);
+    color:hsl(182, 54%, 27%);
 }
