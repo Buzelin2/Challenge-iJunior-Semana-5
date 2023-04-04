@@ -9,14 +9,69 @@
 }
 .main{
     background-color: white;
-    margin-left: 23vw;
+    margin-left: 22vw;
     border-radius: 2vw;
     margin-top: 28vh;
-    width: 54vw;
-    height: 28vw;
+    width: 56vw;
+    height: 30vw;
     min-width: 400px;
     min-height: 210px;
+    display: flex;
 }
 .split{
-    margin-left: 48vw;
+    font-size: 1.6vw;
+    letter-spacing: 1vw;
+    color: hsl(183, 64%, 25%);
+    font-weight: bold;
+    margin-top: 1vh;
+}
+.splitter{
+    margin-top: 13vh;
+    margin-left: 46.6vw;
+    margin-bottom: -20vh;
+}
+.left{
+    background-color: white;
+    height: 30vw;
+    width: 28vw;
+    border-radius: 2vw;
+}
+.right{
+    background-color: hsl(183, 100%, 15%);
+    margin-top: 2vw;
+    height: 26vw;
+    width: 25vw;
+    margin-left: 1vw;
+    border-radius: 1vw;
+    min-width: fit-content;
+}
+.input_money{
+    margin-top: 1.5vw;
+    margin-left: 2.5vw;
+    background-color: white;
+    width: 10vw;
+}
+.bill{
+    color:hsl(183, 100%, 15%);
+    font-size: 1.2vw;
+    letter-spacing: 0.1vw;
+    background-color: white;
+    margin-bottom: 0.5vw;
+}
+.money{
+    background-color: hsl(189, 41%, 97%);
+    width: 24vw;
+    border: 0px;
+    height: 3vw;
+    font-size: 1.6vw;
+    text-align: right;
+}
+.money::selection{
+    margin-right: 2vw;
+}
+.money::placeholder{
+    text-align: right;
+    font-size: 1.6vw;
+    margin-right: 1vw;
+    margin-top: 3.5vw;
 }
