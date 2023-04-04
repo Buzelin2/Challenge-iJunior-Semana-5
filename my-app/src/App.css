@@ -1,0 +1,22 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Space Grotesk', sans-serif;
+    background-color: hsl(185, 41%, 84%);
+}
+.tudo{
+    
+}
+.main{
+    background-color: white;
+    margin-left: 23vw;
+    border-radius: 2vw;
+    margin-top: 28vh;
+    width: 54vw;
+    height: 28vw;
+    min-width: 400px;
+    min-height: 210px;
+}
+.split{
+    margin-left: 48vw;
+}

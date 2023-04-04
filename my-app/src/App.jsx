@@ -5,7 +5,11 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-   <div></div>
+   <div className='tudo'>
+    <p className='split'>SPLI</p>
+    <p className='split'>TTER</p>
+    <div className='main'></div>
+   </div>
 )}
 
 export default App
