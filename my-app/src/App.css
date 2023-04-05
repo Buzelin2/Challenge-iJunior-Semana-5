@@ -121,3 +121,48 @@
     background-color: hsl(189, 41%, 97%);
     color:hsl(182, 54%, 27%);
 }
+.tip1{
+    display: flex;
+    background-color: rgb(0,0,0,0);
+    margin-top: 3.5vw;
+    margin-left: 2vw;
+}
+.tip2{
+    display: flex;
+    background-color: rgb(0,0,0,0);
+    margin-top: 3.5vw;
+    margin-left: 2vw;
+}
+.tip_text{
+    background-color: rgb(0,0,0,0);
+    color: white;
+    font-size: 1vw;
+}
+.value_text1{
+    background-color: rgb(0,0,0,0);
+    color: hsl(175, 55%, 50%);
+    margin-left: 7vw;
+    font-size: 2.5vw;
+    margin-top: -0.8vw;
+}
+.value_text2{
+    background-color: rgb(0,0,0,0);
+    color: hsl(175, 55%, 50%);
+    margin-left: 9.18vw;
+    font-size: 2.5vw;
+    margin-top: -0.8vw;
+}
+.texto{
+    background-color: rgb(0,0,0,0);
+}
+.tip_text2{
+    background-color: rgb(0,0,0,0);
+    font-size: 0.8vw;
+    color: hsl(182, 24%, 49%);
+}
+.img{
+    position: absolute;
+    background-color: rgb(0,0,0,0);
+    margin-top: 1vw;
+    margin-left: 1vw;
+}
