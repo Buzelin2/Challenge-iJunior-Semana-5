@@ -172,6 +172,9 @@
     background-color: rgb(13,104,109);
     color: rgb(7, 90, 96);
 }
+.count::-webkit-slider-thumb{
+    display: none;
+}
 @media screen and (min-width:300px) and (max-width:768px) {
 
 .main{
@@ -198,12 +201,12 @@
 .count{
     width: 80vw;
     height: 10vw;
-    margin-left: 10vw;
+    margin-left: 8.5vw;
 }
 .bill{
     margin-top: 8vw;
     font-size: 4vw;
-    margin-left: 10vw;
+    margin-left: 8.5vw;
 }
 .count::placeholder{
     font-size: 7vw;
@@ -215,7 +218,87 @@
     margin-left: 10vw;
     margin-top: 3vw;
 }
+.tip{
+    font-size: 4vw;
+    margin-top: 8vw;
+    margin-left: 10vw;
+    width: 40vw;
+}
+.botao1, .botao2, .botao3, .botao4, .botao5, .botao6{
+    position: absolute;
+    width: 40vw;
+    height: 13vw;
+    border-radius: 1.2vw;
+    font-size: 6vw;
+    margin-left: 7vw;
+}
+.botao2{
+    margin-left: 50vw;
+}
+.botao3{
+    margin-top: 18vw;
+}
+.botao5{
+    margin-top: 34vw;
+}
+.botao4{
+    margin-top: 18vw;
+    margin-left: 50vw;
+}
+.botao6{
+    margin-top: 34vw;
+    margin-left: 50vw;
+}
+.imput_people{
+    margin-top: 55vw;
+}
+.num_people{
+    font-size: 4vw;
+    margin-left: 8.5vw;
+    width: 60vw;
+}
+.img{
+    width: 4vw;
+}
+.right{
+    margin-top: 88vw;
+    width: 86vw;
+    height: 75vw;
+    margin-left: 7vw;
+    border-radius: 5vw;
+}
 
+.tip1{
+    margin-left: 4vw;
+    margin-top: 12vw;
+}
+.tip2{
+    margin-left: 4vw;
+    margin-top: 6vw;
+}
+.tip_text{
+    font-size: 4vw;
+}
+.tip_text2{
+    font-size: 3vw;
+    margin-top: 2vw;
+}
+.value_text1{
+    font-size: 9vw;
+    margin-left: 24vw;
+    margin-top: -1vw;
+}
+.value_text2{
+    font-size: 9vw;
+    margin-left: 33.6vw;
+    margin-top: -1vw;
+}
+.reset{
+    width: 74vw;
+    height: 11vw;
+    font-size: 7vw;
+    margin-left: 6vw;
+    margin-top: 14vw;
 
-
+}
 }
