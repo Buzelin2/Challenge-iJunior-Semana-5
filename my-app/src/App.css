@@ -113,9 +113,12 @@
     cursor: pointer;
 }
 .botao6{
+    border: none;
     background-color: hsl(189, 41%, 97%);
     color:hsl(182, 54%, 27%);
+    padding-left: 7vh;
 }
+
 .tip1{
     display: flex;
     background-color: rgb(0,0,0,0);
@@ -171,6 +174,7 @@
     font-size: 1.2vw;
     background-color: rgb(13,104,109);
     color: rgb(7, 90, 96);
+    cursor: pointer;
 }
 .count::-webkit-slider-thumb{
     display: none;
