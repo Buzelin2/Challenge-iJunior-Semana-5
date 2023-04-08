@@ -73,12 +73,22 @@
     text-align: right;
     padding-right: 1vw;
 }
-.count::placeholder{
-    text-align: right;
+.count2{
+    background-color: hsl(189, 41%, 97%);
+    width: 23vw;
+    border: 0px;
+    height: 3vw;
     font-size: 1.6vw;
-    margin-right: 1vw;
-    margin-top: 3.5vw;
+    text-align: right;
+    padding-right: 1vw;
+    outline: none;
+    
 }
+input[type=number]:focus{
+    border: 2px solid red;
+    border-radius: 0.3vw;
+}
+
 .tip{
     color:hsl(183, 100%, 15%);
     font-size: 0.9vw;
@@ -148,14 +158,14 @@ input::-webkit-inner-spin-button {
 .value_text1{
     background-color: rgb(0,0,0,0);
     color: hsl(175, 55%, 50%);
-    margin-left: 7vw;
+    margin-left: 4vw;
     font-size: 2.5vw;
     margin-top: -0.8vw;
 }
 .value_text2{
     background-color: rgb(0,0,0,0);
     color: hsl(175, 55%, 50%);
-    margin-left: 9.18vw;
+    margin-left: 6.18vw;
     font-size: 2.5vw;
     margin-top: -0.8vw;
 }
@@ -170,7 +180,7 @@ input::-webkit-inner-spin-button {
 .img{
     position: absolute;
     background-color: rgb(0,0,0,0);
-    margin-top: 1vw;
+    margin-top: 0.6vw;
     margin-left: 1vw;
 }
 .reset{
@@ -185,8 +195,31 @@ input::-webkit-inner-spin-button {
     color: rgb(7, 90, 96);
     cursor: pointer;
 }
+.reset1{
+    margin-left: 2vw;
+    width: 21vw;
+    height: 3.4vw;
+    border-radius: 0.5vw;
+    border: 0px;
+    margin-top: 7.6vw;
+    font-size: 1.2vw;
+    background-color: hsl(175, 61%, 51%);;
+    color: rgb(7, 90, 96);
+    cursor: pointer;
+}
 .count::-webkit-slider-thumb{
     display: none;
+}
+.count2::-webkit-slider-thumb{
+    display: none;
+}
+span{
+    font-size: 0.8vw;
+    background-color: rgb(0,0,0,0);
+    color: red;
+    position: absolute;
+    margin-top: 0.4vw;
+    margin-left: 0.1vw;
 }
 @media screen and (min-width:300px) and (max-width:768px) {
 
@@ -215,6 +248,17 @@ input::-webkit-inner-spin-button {
     width: 80vw;
     height: 10vw;
     margin-left: 8.5vw;
+    font-size: 7vw;
+}
+.count2{
+    width: 80vw;
+    height: 10vw;
+    margin-left: 8.5vw;
+    font-size: 7vw;
+}
+.span{
+    font-size: 3vw;
+    margin-left: 8.3vw;
 }
 .bill{
     margin-top: 8vw;
@@ -288,6 +332,7 @@ input::-webkit-inner-spin-button {
 .tip2{
     margin-left: 4vw;
     margin-top: 6vw;
+   
 }
 .tip_text{
     font-size: 4vw;
@@ -300,6 +345,7 @@ input::-webkit-inner-spin-button {
     font-size: 9vw;
     margin-left: 24vw;
     margin-top: -1vw;
+    
 }
 .value_text2{
     font-size: 9vw;
@@ -307,6 +353,14 @@ input::-webkit-inner-spin-button {
     margin-top: -1vw;
 }
 .reset{
+    width: 74vw;
+    height: 11vw;
+    font-size: 7vw;
+    margin-left: 6vw;
+    margin-top: 14vw;
+
+}
+.reset1{
     width: 74vw;
     height: 11vw;
     font-size: 7vw;
