@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import Dados from './Componentes/Dados'
 
 
 function App() {
@@ -43,6 +44,7 @@ function App() {
       const total = bill + tip;
       setTipAmount(tip / numberOfPeople);
       setTotal(total / numberOfPeople);
+      
     }
   };
 
@@ -60,6 +62,7 @@ function App() {
     <div className='tudo'> {/* div contendo tudo */}
       <div className='splitter'>
         <p className='split'>SPLI</p>
+
         <p className='split'>TTER</p>
       </div>
       <div className='main'> {/* as divs da parte principal foram dividias entre a branca(left) e a azul(right) */}
@@ -73,14 +76,16 @@ function App() {
           <p className='tip'>Select Tip %</p>
           <div className='botoes'>
             <div className='botoes_cima'>
-              <button className='botao botao1' onClick={() => { setTipPercentage(5); handleCalculate(bill, 5, numberOfPeople); }}>5%</button>
-              <button className='botao botao2' onClick={() => { setTipPercentage(10); handleCalculate(bill, 10, numberOfPeople); }}>10%</button>
-              <button className='botao botao3' onClick={() => { setTipPercentage(15); handleCalculate(bill, 15, numberOfPeople); }}>15%</button>
+            <Dados  valor = {bill} numero = {numberOfPeople} porcentagem = {tipPercentage} calcular = {handleCalculate}/>
+              <button className='botao botao1' onClick={() => { setTipPercentage(5);}}>5%</button>
+              <button className='botao botao2' onClick={() => { setTipPercentage(10); }}>10%</button>
+              <button className='botao botao3' onClick={() => { setTipPercentage(15); }}>15%</button>
             </div>
             <div className='botoes_baixo'>
-              <button className='botao botao4' onClick={() => { setTipPercentage(20); handleCalculate(bill, 20, numberOfPeople); }}>25%</button>
-              <button className='botao botao5' onClick={() => { setTipPercentage(50); handleCalculate(bill, 50, numberOfPeople); }}>50%</button>
+              <button className='botao botao4' onClick={() => { setTipPercentage(20);  }}>25%</button>
+              <button className='botao botao5' onClick={() => { setTipPercentage(50);  }}>50%</button>
               <input class="botao botao6 custom-input6" type="number" min="0" max="100" value={customPercentage == -1? '' : customPercentage} placeholder="CUSTOM"  onChange={(e) => {setCustomPercentage(Number(e.target.value)); handleCalculate(bill, Number(e.target.value), numberOfPeople);
+               
                 }}
               /> 
               {/* Lembrar de transformar esse botão em um form onClick*/}
