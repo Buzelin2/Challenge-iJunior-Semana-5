@@ -56,7 +56,7 @@ function App() {
     setTotal(0);
     setCustomPercentage(-1);
   };
-
+var oi = tipPercentage;
 
   return (
     <div className='tudo'> {/* div contendo tudo */}
@@ -76,15 +76,15 @@ function App() {
           <p className='tip'>Select Tip %</p>
           <div className='botoes'>
             <div className='botoes_cima'>
-            <Dados  valor = {bill} numero = {numberOfPeople} porcentagem = {tipPercentage} calcular = {handleCalculate}/>
-              <button className='botao botao1' onClick={() => { setTipPercentage(5);}}>5%</button>
-              <button className='botao botao2' onClick={() => { setTipPercentage(10); }}>10%</button>
-              <button className='botao botao3' onClick={() => { setTipPercentage(15); }}>15%</button>
+
+              <button className={oi == 5? 'botao botao11' : 'botao botao1'} onClick={() => { setTipPercentage(5);}}>5%</button>
+              <button className={oi == 10? 'botao botao11' : 'botao botao2'} onClick={() => { setTipPercentage(10); }}>10%</button>
+              <button className={oi == 15? 'botao botao11' : 'botao botao3'} onClick={() => { setTipPercentage(15); }}>15%</button>
             </div>
             <div className='botoes_baixo'>
-              <button className='botao botao4' onClick={() => { setTipPercentage(20);  }}>25%</button>
-              <button className='botao botao5' onClick={() => { setTipPercentage(50);  }}>50%</button>
-              <input class="botao botao6 custom-input6" type="number" min="0" max="100" value={customPercentage == -1? '' : customPercentage} placeholder="CUSTOM"  onChange={(e) => {setCustomPercentage(Number(e.target.value)); handleCalculate(bill, Number(e.target.value), numberOfPeople);
+              <button className={oi == 25? 'botao botao11' : 'botao botao4'} onClick={() => { setTipPercentage(25);  }}>25%</button>
+              <button className={oi == 50? 'botao botao11' : 'botao botao5'} onClick={() => { setTipPercentage(50);  }}>50%</button>
+              <input class="botao botao6 custom-input6" type="number" min="0" max="100" value={customPercentage == -1? '' : customPercentage} placeholder="CUSTOM"  onChange={(e) => {setCustomPercentage(Number(e.target.value)); setTipPercentage(0); handleCalculate(bill, Number(e.target.value), numberOfPeople);
                
                 }}
               /> 

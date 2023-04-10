@@ -207,6 +207,9 @@ input::-webkit-inner-spin-button {
     color: rgb(7, 90, 96);
     cursor: pointer;
 }
+.botao11{
+    background-color: hsl(175, 61%, 51%);;
+}
 .count::-webkit-slider-thumb{
     display: none;
 }
